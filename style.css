@@ -1,6 +1,9 @@
+:root{
+    
+}
+
 body{
-
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container{
@@ -48,30 +51,49 @@ height: 100vh;
 .text-1{
     color: orange;
     font-size: 50px;
+    letter-spacing: 8px;
 }
 
 .text-2{
     font-size: 50px;
+    letter-spacing: 8px;
+}
+
+.text-3{
+    font-size: 10px;
 }
 
 .text-container input{
     border-radius: 10px 0 0 10px;
     height: 25px;
     width: 250px;
+
 }
 
 .text-container button{
     height: 32px;
-    width: 40px;
+    width: 60px;
     border-radius: 15px;
     position: absolute;
     transform: translateX(-30px);
-    color-scheme: lightpink;
-    
+    background-color: palevioletred;
+    border-style: hidden;
+    cursor: pointer;
 
 }
 
+.text-container button img{
 
+    padding-top: 7px;
+    height: 15px;
+}
+
+.email-prompt{
+    color: red;
+    font-size: 10px;
+    padding-left: 15px;
+    display: none;
+}
 
 
 
