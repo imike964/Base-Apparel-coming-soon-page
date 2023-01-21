@@ -1,19 +1,22 @@
 // const textvar = document.getElementsByClassName("email-prompt");
 
-function ValidateEmail() {
-  let testvar1 = document.querySelector("#email-prompt");
-  let testvar2 = document.querySelector("#icon-error");
-  let testvar3 =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  let testvar4 = document.querySelector("#input1");
 
-  if (testvar4.value.match(testvar3)) {
-    testvar4.value = "";
-    testvar1.style.display = "none";
-    testvar2.style.display = "none";
+function ValidateEmail() {
+  // have better variable names
+  // use const instead of let unless you plan to reassign the variable
+  let emailPrompt= document.querySelector("#email-prompt");
+  let iconError = document.querySelector("#icon-error");
+  let validator =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  let input = document.getElementById("input1");
+
+  if (input.value.match(validator)) {
+    input.value = "";
+    emailPrompt.style.display = "none";
+    iconError.style.display = "none";
   } else {
-    testvar1.style.display = "flex";
-    testvar2.style.display = "flex";
+    emailPrompt.style.display = "block";
+    iconError.style.display = "block";
   }
 }
 

@@ -1,72 +1,73 @@
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.container{
-background-image: url("/images/bg-pattern-desktop.svg");
-justify-content: center;
-align-items: center;
-display: flex;
-height: 100vh;
-
+.container {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
 }
 
-.card{
+.card {
     display: flex;
+    /* use rem units and not pixels */
+    /* rem = root element which is usually the browser default font size */
+    /* this allows us to easily scale things ala mobile development */
     width: 800px;
     height: 500px;
     background-color: lightpink;
 }
 
-.img-container{
+.img-container {
     width: 100%;
     max-height: 100%;
 
 }
 
-.img-container img{
+.img-container img {
     width: 100%;
     height: 100%;
 }
 
-.text-container{
-    width: 950px;
+.text-container {
     text-align: left;
     /* font-size: 15px; */
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px;
     padding-top: 30px;
+    /* consider adding this to a form element */
     position: relative;
     background-image: url(/images/bg-pattern-desktop.svg);
 }
 
-.text-container img{
+.text-container img {
     padding-bottom: 50px;
 }
 
-.text-1{
+.text-1 {
     color: orange;
     font-size: 50px;
     letter-spacing: 8px;
 }
 
-.text-2{
+.text-2 {
     font-size: 50px;
     letter-spacing: 8px;
 }
 
-.text-3{
+.text-3 {
     font-size: 10px;
 }
 
-.text-container input{
+.text-container input {
     border-radius: 10px 0 0 10px;
     height: 25px;
     width: 250px;
 
 }
 
-.text-container button{
+.text-container button {
     height: 32px;
     width: 60px;
     border-radius: 15px;
@@ -78,30 +79,39 @@ height: 100vh;
 
 }
 
-#input1{
+#input1 {
     padding-left: 10px;
     border-color: lightgray;
     box-shadow: none;
 }
 
-.text-container button img{
-
+.text-container button img {
     padding-top: 7px;
     height: 15px;
 }
 
-#email-prompt{
+#email-prompt {
     color: red;
     font-size: 10px;
     padding-left: 15px;
     display: none;
 }
 
-#icon-error{
+#icon-error {
     position: absolute;
     right: 205px;
     bottom: 46px;
     display: none;
 }
 
+/* TODO: revisit this */
+/* 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
 
+    .card {
+        color: red;
+    }
+  } */
