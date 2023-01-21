@@ -78,6 +78,12 @@ height: 100vh;
 
 }
 
+#input1{
+    padding-left: 10px;
+    border-color: lightgray;
+    box-shadow: none;
+}
+
 .text-container button img{
 
     padding-top: 7px;
@@ -94,7 +100,7 @@ height: 100vh;
 #icon-error{
     position: absolute;
     right: 205px;
-    bottom: 51px;
+    bottom: 46px;
     display: none;
 }
 
